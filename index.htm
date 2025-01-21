@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Dynamic Web Fundamentals</title>
+   <style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    
+    header {
+        background-color: #1d4e6f;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    
+    .highlight {
+        color: #ffff00;
+    }
+    
+    nav {
+        background-color: #333;
+        padding: 10px 0;
+    }
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+    }
+    
+    main {
+        display: flex;
+        max-width: 1200px;
+        margin: 20px auto;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .content-section {
+        flex: 1;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    .section-header {
+        background-color: #1d4e6f;
+        color: white;
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .section-content {
+        padding: 20px;
+    }
+    
+    .profile-image {
+        float: right;
+        margin: 0 0 20px 20px;
+        max-width: 200px;
+    }
+    
+    .flag {
+        width: 150px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+    
+    .flag-caption {
+        font-style: italic;
+        font-size: 0.9em;
+    }
+    
+    .resources-list {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .resources-list li {
+        margin-bottom: 10px;
+    }
+    
+    .resources-list a {
+        color: #1d4e6f;
+        text-decoration: none;
+    }
+    
+    footer {
+        background-color: #1d4e6f;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 20px;
+    }
+    
+    .flower {
+        color: pink;
+    }
+    
+   </style>
+</head>
+<body>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Azouma G. Adenkou</span></h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Canvas</a></li>
+            <li><a href="#">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="content-section">
+            <h2 class="section-header">About Me</h2>
+            <div class="section-content">
+                <img src="azouma_gerard_adenkou.jpg" alt="Profile photo" class="profile-image">
+                <p>My name is Azouma Gerard Adenkou and I go by BYU-i. I was born in Togo and currently living with my wife in Sierra Leone. I am currently a Byui student studing web & computer programming. My wife is my world and I love spending time with her. I love to travel and I love to learn new things.</p>
+                
+                <h3>Lome, Togo</h3>
+                <img src="/Flag_of_Togo.png" alt="Official Flag of Togo" class="flag">
+                <p class="flag-caption">Official Flag of Togo</p>
+                <p>Togo is a small country located in west Africa and having the first nice Aerport in west Africa. It is home to 20% of the world's plant and animal species. The country is best known for its vegetation, diversity of cultures, and attraction.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2 class="section-header">Web Dev Resources</h2>
+            <div class="section-content">
+                <ul class="resources-list">
+                    <li><a href="#">Dev.to Community</a></li>
+                    <li><a href="#">Smashing Magazine</a></li>
+                    <li><a href="#">CSS Tricks</a></li>
+                    <li><a href="#">W3 Schools</a></li>
+                    <li><a href="#">Udemy</a></li>
+                    <li><a href="#">Image Placeholder</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>©2025 <span class="flower">❀</span> Azouma Gerard Adenkou <span class="flower">❀</span> Togo</p>
+        <p>Last Modification: 01/21/2025 11:16:54</p>
+    </footer>
+</body>
+</html>

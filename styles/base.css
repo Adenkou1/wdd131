@@ -1,0 +1,112 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1d4e6f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.highlight {
+    color: #ffff00;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.content-section {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.section-header {
+    background-color: #1d4e6f;
+    color: white;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.section-content {
+    padding: 20px;
+}
+
+.profile-image {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 200px;
+}
+
+.flag {
+    width: 150px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.flag-caption {
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.resources-list {
+    list-style: none;
+    padding: 0;
+}
+
+.resources-list li {
+    margin-bottom: 10px;
+}
+
+.resources-list a {
+    color: #1d4e6f;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1d4e6f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.flower {
+    color: pink;
+}
