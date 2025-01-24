@@ -29,6 +29,15 @@ nav a {
     font-weight: bold;
 }
 
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 0;
+    justify-content: center;
+
+}
+
 nav a:hover {
     text-decoration: overline;
 }
