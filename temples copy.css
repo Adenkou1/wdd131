@@ -1,0 +1,98 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    margin: auto;
+    padding: auto;  
+}
+header {
+    background-color: #1d4e6f; 
+    color: white;
+    padding: auto;
+}
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav {
+    background-color: #1d4e6f; 
+    display: flex;
+    justify-content: center;
+    padding: auto 0;
+    margin: 0;
+}
+nav a {
+    color: white;
+    text-emphasis: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 0;
+    justify-content: center;
+
+}
+
+nav a:hover {
+    text-decoration: overline;
+}
+
+main {
+    padding: 20px;
+}
+
+main h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.Album {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 10px;
+    justify-items: center;
+}
+
+.Album img {
+    width: 250px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.Album p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #333;
+}
+
+
+footer {
+    background-color: #1d4e6f;
+    color: white;
+    text-align: center;
+    padding: auto;
+    margin-top: auto;
+}
+
+.flower {
+    color: pink;
+}
