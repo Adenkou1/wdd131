@@ -1,26 +1,3 @@
-
-document.addEventListener("DOMContentLoaded", () => {
-    
-    const yearElement = document.querySelector("#copyright-year");
-    const currentYear = new Date().getFullYear();
-    yearElement.textContent = currentYear;
-
-    
-    const lastModifiedElement = document.querySelector("#last-modified");
-    const lastModifiedDate = new Date(document.lastModified);
-    lastModifiedElement.textContent = lastModifiedDate.toLocaleString();
-});
-
-
-document.addEventListener("DOMContentLoaded", () => {
-    const hamburgerButton = document.querySelector("#hamburger-button");
-    const navMenu = document.querySelector("nav");
-
-    hamburgerButton.addEventListener("click", () => {
-        navMenu.classList.toggle("open");
-        hamburgerButton.textContent = navMenu.classList.contains("open") ? "X" : "☰";
-    });
-});
 // Array of Temple Objects
 const temples = [
     {
@@ -126,7 +103,7 @@ const temples = [
     displayTemples(filteredTemples);
   }
   
-  // Add event listeners
+  // Add event listeners after DOM loads
   document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("nav button").forEach(button => {
       button.addEventListener("click", () => {
@@ -136,10 +113,8 @@ const temples = [
   
     // Display all temples on page load
     displayTemples(temples);
-  });
   
-  // Update footer with current year and last modified date
-  document.addEventListener("DOMContentLoaded", () => {
+    // Update footer date
     document.getElementById("year").textContent = new Date().getFullYear();
     document.getElementById("last-modified").textContent = document.lastModified;
   });
