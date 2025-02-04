@@ -61,6 +61,7 @@ const temples = [
   // Function to display temples
   function displayTemples(templeArray) {
     const container = document.getElementById("temple-container");
+    if (!container) return;
     container.innerHTML = ""; // Clear previous content
   
     templeArray.forEach(temple => {
@@ -114,8 +115,11 @@ const temples = [
     // Display all temples on page load
     displayTemples(temples);
   
-    // Update footer date
-    document.getElementById("year").textContent = new Date().getFullYear();
+    const yearElement = document.getElementById("year");
+    if (yearElement) yearElement.textContent = new Date().getFullYear();
+    
+    const lastModifiedElement = document.getElementById("last-modified");
+    if (lastModifiedElement) lastModifiedElement.textContent = document.lastModified;
     document.getElementById("last-modified").textContent = document.lastModified;
   });
   
